@@ -18,49 +18,13 @@ The primary engineering goal of **Studio EQ Pro** is to maintain a completely no
 
 While the custom Frontend handles user input, parameters, and display updates, the asynchronous Backend engine executes deep matrix manipulations, Fourier transforms, and fast convolutions in the background via **Librosa** and **SciPy**.
 
+---
+
 ## Block Diagram
 
-```mermaid
-graph TD
-
-    %% Frontend Layer
-    subgraph Frontend [User Interface Layer]
-        UI[Gradio Web UI]
-        CSS[Custom CSS Architecture style_egalizator.py]
-        UI --- CSS
-    end
-
-    %% Control & Audio Data Flow
-    UI -->|1. Upload Audio WAV/MP3| Engine
-    UI -->|2. Real-time Sliders & Parameters| Engine
-
-    %% Backend Layer
-    subgraph Engine [Asynchronous DSP Core Engine - eq_backend.py]
-        DSP[StudioDSP Master Class]
-        DSP --> Modules{DSP Processing Core}
-    end
-
-    %% DSP Processing Modules
-    subgraph Processing [Advanced DSP Pipeline]
-        Modules --> EQ[10-Band Parametric EQ<br>STFT + Gaussian Frequency Masks]
-        Modules --> Rev[Real Space RS Reverb<br>Synthetic IR + Fast FFT Convolution]
-        Modules --> WN[Wiener Filter<br>Stationary Noise Profiling & SNR Tracking]
-        Modules --> Dyn[Dynamics Pipeline<br>Exponential Smoothing Compressor + Noise Gate]
-        Modules --> PT[Pitch & Tempo Core<br>Phase Vocoder Pitch Shift + Time Stretch]
-        Modules --> SE[Stereo Enhancer 3D<br>Mid/Side Processing + Haas Effect + Bass Mono]
-    end
-
-    %% Visualization Output
-    Processing -->|Processed Audio Arrays| Plotter[Matplotlib Visualization Engine]
-
-    subgraph Visuals [Visual Validation Displays]
-        Plotter --> Wave[Time Domain Waveforms]
-        Plotter --> Spec[Logarithmic Spectrograms]
-        Plotter --> Audio[ORL-style Audiograms]
-    end
-
-    Visuals -->|Rendered UI Images & WAV Export| UI
-```
+<div align="center">
+  <img src="assets/architecture-diagram.png" alt="Studio EQ Pro Architecture Diagram" width="1000"/>
+</div>
 
 ---
 
@@ -153,41 +117,49 @@ To run Studio EQ Pro locally on your machine, follow these structured steps:
 ```bash
 git clone https://github.com/gavmada26/Studio-EQ-Pro.git
 cd Studio-EQ-Pro
-```
 
-## 2. Setup the Virtual Environment
+## 2. Create Virtual Environment
 
-It is highly recommended to isolate the dependencies using a clean virtual environment.
+It is recommended to isolate dependencies using a virtual environment.
 
 ```bash
-# Create the virtual environment
 python -m venv venv
+```
 
-# Activate the environment
+Activate the environment:
 
-# Windows (Command Prompt / PowerShell)
+### Windows (Command Prompt / PowerShell)
+
+```bash
 venv\Scripts\activate
+```
 
-# macOS / Linux
+### macOS / Linux
+
+```bash
 source venv/bin/activate
 ```
 
-## 3. Install Package Dependencies
+---
+
+## 3. Install Dependencies
 
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## 4. Launch the DAW Ecosystem
+---
+
+## 4. Run the Application
 
 ```bash
 python src/egalizator_gradio.py
 ```
 
-Upon initialization, the terminal will confirm the active server link.
+After launching, the terminal will display the local server address.
 
-Open:
+Open in browser:
 
 ```text
 http://127.0.0.1:7860
@@ -197,13 +169,10 @@ http://127.0.0.1:7860
 
 # 🎓 Academic Context
 
-**Author:** Mădălin GAVRILAȘ  
+**Author:** Mădălin GAVRILAȘ
 **Group:** TST-RO – 2242/2
-
 **Institution:** Technical University of Cluj-Napoca (UTCN), Romania
-
 **Faculty:** Faculty of Electronics, Telecommunications and Information Technology (ETTI)
-
 **Project Coordinator:** Assoc. Prof. Dr. Eng. Simina EMERICH
-
 **Academic Year:** 2026
+
