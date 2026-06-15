@@ -7,7 +7,7 @@ The project bridges the gap between theoretical digital signal processing (DSP) 
 The system architecture is inspired by the foundational concepts of [Audio-Equalizer by Ahmed-Hajhamed](https://github.com/Ahmed-Hajhamed/Audio-Equalizer), but has been entirely rewritten, modernized, and significantly extended to feature a complete Frontend/Backend separation, a custom-engineered CSS interface, and professional-grade mastering and spatialization pipelines.
 
 <div align="center">
-  <img src="assets/svg.jpg" alt="Studio EQ Pro Logo" width="250"/>
+  <img src="assets/logo.jpg" alt="Studio EQ Pro Logo" width="250"/>
 </div>
 
 ---
