@@ -167,12 +167,9 @@ http://127.0.0.1:7860
 
 ---
 
-# 🎓 Academic Context
-
-**Author:** Mădălin GAVRILAȘ
-**Group:** TST-RO – 2242/2
-**Institution:** Technical University of Cluj-Napoca (UTCN), Romania
-**Faculty:** Faculty of Electronics, Telecommunications and Information Technology (ETTI)
-**Project Coordinator:** Assoc. Prof. Dr. Eng. Simina EMERICH
-**Academic Year:** 2026
+## 🎓 Academic Attribution
+* **Developer:** Mădălin Gavrilaș
+* **Department:** Department of Communications, Faculty of Electronics, Telecommunications and Information Technology (ETTI)
+* **Institution:** Technical University of Cluj-Napoca (UTCN), Romania
+* **Specialization:** Telecommunications Technologies and Systems (TST-RO)
 
