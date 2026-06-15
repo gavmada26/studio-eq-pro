@@ -1,14 +1,21 @@
 # 🎛️ Studio EQ Pro - Hybrid Desktop Audio Player Architecture
 
+<p align="center">
+  <img src="assets/logo.svg" alt="Project Logo" width="160" height="160">
+</p>
+
+<p align="center">
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.11%2B-blue?style=for-the-badge&logo=python" alt="Python"></a>
+  <a href="https://gradio.app"><img src="https://img.shields.io/badge/Gradio-Frontend-orange?style=for-the-badge" alt="Gradio"></a>
+  <a href="https://librosa.org"><img src="https://img.shields.io/badge/Librosa-DSP-blueviolet?style=for-the-badge" alt="Librosa"></a>
+  <a href="https://scipy.org"><img src="https://img.shields.io/badge/SciPy-Computation-8CA1CB?style=for-the-badge&logo=scipy&logoColor=white" alt="SciPy"></a>
+</p>
+
 This repository contains the complete implementation of an interactive Digital Audio Workstation (DAW) ecosystem designed as a lightweight, non-blocking desktop application using Python and Gradio.
 
 The project bridges the gap between theoretical digital signal processing (DSP) algorithms and real-time studio software. It transforms advanced mathematical operations from offline scripts into a responsive, production-ready audio tool.
 
 The system architecture is inspired by the foundational concepts of [Audio-Equalizer by Ahmed-Hajhamed](https://github.com/Ahmed-Hajhamed/Audio-Equalizer), but has been entirely rewritten, modernized, and significantly extended to feature a complete Frontend/Backend separation, a custom-engineered CSS interface, and professional-grade mastering and spatialization pipelines.
-
-<div align="center">
-  <img src="assets/logo.svg" alt="Studio EQ Pro Logo" width="250"/>
-</div>
 
 ---
 
