@@ -117,7 +117,7 @@ To run Studio EQ Pro locally on your machine, follow these structured steps:
 ```bash
 git clone https://github.com/gavmada26/Studio-EQ-Pro.git
 cd Studio-EQ-Pro
-
+```
 ## 2. Create Virtual Environment
 
 It is recommended to isolate dependencies using a virtual environment.
