@@ -20,7 +20,7 @@ While the custom Frontend handles user input, parameters, and display updates, t
 
 ---
 
-## Block Diagram
+## 🏗️ Block Diagram
 
 <div align="center">
   <img src="assets/block_diagram.png" alt="Studio EQ Pro Architecture Diagram" width="1000"/>
@@ -30,7 +30,7 @@ While the custom Frontend handles user input, parameters, and display updates, t
 
 # ✨ Comprehensive Feature Set
 
-## 1. 10-Band Parametric Equalizer
+## 1. 🎚️ 10-Band Parametric Equalizer
 
 ### Mathematical Core
 Utilizes the Short-Time Fourier Transform (STFT) to map time-domain audio signals into the complex frequency domain.
@@ -40,7 +40,7 @@ Unlike basic brick-wall filters that induce phase distortion and ringing artifac
 
 ---
 
-## 2. Real Space (RS) Reverb
+## 2. 🌊 Real Space (RS) Reverb
 
 ### Acoustic Simulation
 Emulates real physical spaces (Room, Hall, Chamber, Plate, Cathedral) by generating high-fidelity synthetic Impulse Responses (IR).
@@ -50,7 +50,7 @@ A white noise vector is modulated by a steep, mathematically computed exponentia
 
 ---
 
-## 3. Wiener Filter & Noise Reduction
+## 3. 🧹 Wiener Filter & Noise Reduction
 
 ### Stationary De-noising
 Specifically engineered to combat constant background disturbances such as microphone hiss, system fan noise, or pre-amplifier hum.
@@ -60,7 +60,7 @@ Analyzes the stationary noise floor of the signal, tracks the Signal-to-Noise Ra
 
 ---
 
-## 4. Dynamics & Mastering (Compressor + Gate)
+## 4. 🗜️ Dynamics & Mastering (Compressor + Gate)
 
 ### Noise Gate
 Automatically silences audio sections that drop below a configurable decibel threshold, completely cleansing vocal pauses of ambient artifacts.
@@ -70,7 +70,7 @@ Limits high-amplitude transients to achieve a balanced, commercially competitive
 
 ---
 
-## 5. Pitch, Tempo & Echo Engineering
+## 5. ⏱️ Pitch, Tempo & Echo Engineering
 
 ### Independent Manipulation
 Allows independent tuning of fundamental frequency (Pitch Shifting) and duration (Time Stretching) without cross-contamination, using a high-quality phase vocoder mechanism.
@@ -80,7 +80,7 @@ Includes an echo module capable of generating recurring, rhythmically clean sign
 
 ---
 
-## 6. Stereo Enhancer (3D Spatial Audio)
+## 6. 🔊 Stereo Enhancer (3D Spatial Audio)
 
 ### Haas Effect
 Widens the perception of the soundstage by creating a precise 15 ms delay vector mapped directly onto the side channel.
@@ -93,7 +93,7 @@ A critical mixing utility that actively intercepts all frequencies below 120 Hz 
 
 ---
 
-## 7. Interactive Visual Validation
+## 7. 📈 Interactive Visual Validation
 
 Provides immediate, production-grade visual feedback computed directly from the processed numeric arrays:
 
@@ -112,10 +112,10 @@ Simulates clinical ORL diagnostic charts, plotting absolute signal intensity acr
 
 To run Studio EQ Pro locally on your machine, follow these structured steps:
 
-## 1. Clone the Repository
+## 1. 📂 Clone the Repository
 
 ```bash
-git clone https://github.com/gavmada26/Studio-EQ-Pro.git
+git clone [https://github.com/gavmada26/Studio-EQ-Pro.git](https://github.com/gavmada26/Studio-EQ-Pro.git)
 cd Studio-EQ-Pro
 ```
 ## 2. Create Virtual Environment
