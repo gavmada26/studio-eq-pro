@@ -7,7 +7,38 @@ The project bridges the gap between theoretical digital signal processing (DSP) 
 The system architecture is inspired by the foundational concepts of [Audio-Equalizer by Ahmed-Hajhamed](https://github.com/Ahmed-Hajhamed/Audio-Equalizer), but has been entirely rewritten, modernized, and significantly extended to feature a complete Frontend/Backend separation, a custom-engineered CSS interface, and professional-grade mastering and spatialization pipelines.
 
 <div align="center">
-  <img src="assets/logo.jpg" alt="Studio EQ Pro Logo" width="250"/>
+  <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+    <defs>
+      <linearGradient id="eqGrad" x1="0" y1="80" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#0284c7"/>
+        <stop offset="50%" stop-color="#2563eb"/>
+        <stop offset="100%" stop-color="#00d4ff"/>
+      </linearGradient>
+    </defs>
+    <style>
+      .knob1 { animation: k1 3s ease-in-out infinite alternate; }
+      .lvl1  { animation: l1 3s ease-in-out infinite alternate; }
+      @keyframes k1 { 0%, 100% { transform: translateY(40px); } 50% { transform: translateY(0px); } }
+      @keyframes l1 { 0%, 100% { y: 60px; height: 20px; } 50% { y: 20px; height: 60px; } }
+      .knob2 { animation: k2 4s ease-in-out infinite alternate; }
+      .lvl2  { animation: l2 4s ease-in-out infinite alternate; }
+      @keyframes k2 { 0%, 100% { transform: translateY(10px); } 50% { transform: translateY(50px); } }
+      @keyframes l2 { 0%, 100% { y: 30px; height: 50px; } 50% { y: 70px; height: 10px; } }
+      .knob3 { animation: k3 2.5s ease-in-out infinite alternate; }
+      .lvl3  { animation: l3 2.5s ease-in-out infinite alternate; }
+      @keyframes k3 { 0%, 100% { transform: translateY(35px); } 50% { transform: translateY(5px); } }
+      @keyframes l3 { 0%, 100% { y: 55px; height: 25px; } 50% { y: 25px; height: 55px; } }
+    </style>
+    <line x1="26" y1="20" x2="26" y2="80" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
+    <line x1="50" y1="20" x2="50" y2="80" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
+    <line x1="74" y1="20" x2="74" y2="80" stroke="#1e293b" stroke-width="4" stroke-linecap="round"/>
+    <rect class="lvl1" x="23" y="60" width="6" height="20" rx="3" fill="url(#eqGrad)" />
+    <rect class="lvl2" x="47" y="30" width="6" height="50" rx="3" fill="url(#eqGrad)" />
+    <rect class="lvl3" x="71" y="55" width="6" height="25" rx="3" fill="url(#eqGrad)" />
+    <g class="knob1"><rect x="16" y="16" width="20" height="8" rx="2" fill="#ffffff" /></g>
+    <g class="knob2"><rect x="40" y="16" width="20" height="8" rx="2" fill="#ffffff" /></g>
+    <g class="knob3"><rect x="64" y="16" width="20" height="8" rx="2" fill="#ffffff" /></g>
+  </svg>
 </div>
 
 ---
